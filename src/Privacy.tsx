@@ -1,8 +1,21 @@
+import { useEffect } from "react";
 import { Helmet } from "react-helmet";
-
+// eslint-disable-next-line react-refresh/only-export-components
+export const scrollWithOffset = (id: string) => {
+  const yOffset = -100;
+  const element = document.getElementById(id);
+  if (element) {
+    const y =
+      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  }
+};
 const Privacy = () => {
+  useEffect(() => {
+    scrollWithOffset("privacy");
+  }, []);
   return (
-    <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+    <div id="privacy" style={{ maxWidth: "900px", margin: "0 auto" }}>
       <Helmet>
         <title>Privacy Policy - INotary</title>
         <meta

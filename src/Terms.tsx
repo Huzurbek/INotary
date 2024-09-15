@@ -1,7 +1,14 @@
+import { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import { scrollWithOffset } from "./Privacy";
+
 const Terms = () => {
+  useEffect(() => {
+    scrollWithOffset("terms");
+  }, []);
+
   return (
-    <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+    <div id="terms" style={{ maxWidth: "900px", margin: "0 auto" }}>
       <Helmet>
         <title>Terms and Conditions - INotary</title>
         <meta
