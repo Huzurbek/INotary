@@ -37,16 +37,22 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: #000;
+  color: white;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: white;
+}
+h2 {
+  color: white;
 }
 p {
   font-family: "Helvetica Now Text";
   font-weight: 400;
   line-height: normal;
+  color: white;
 }
 a {
   color: #fff;
