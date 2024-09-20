@@ -8,7 +8,7 @@ const Terms = () => {
   }, []);
 
   return (
-    <div id="terms" style={{ maxWidth: "900px", margin: "0 auto" }}>
+    <div id="terms" className="term-privacy-wrapper">
       <Helmet>
         <title>Terms and Conditions - INotary</title>
         <meta

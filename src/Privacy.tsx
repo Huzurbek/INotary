@@ -15,7 +15,7 @@ const Privacy = () => {
     scrollWithOffset("privacy");
   }, []);
   return (
-    <div id="privacy" style={{ maxWidth: "900px", margin: "0 auto" }}>
+    <div id="privacy" className="term-privacy-wrapper">
       <Helmet>
         <title>Privacy Policy - INotary</title>
         <meta
